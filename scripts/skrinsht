@@ -1,0 +1,2 @@
+#!/bin/bash
+import $HOME/Pictures/$(date +%Y-%m-%d_%H%m%s).png

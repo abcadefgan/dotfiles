@@ -2,7 +2,10 @@ set nocompatible
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set relativenumber
+set numberwidth=1
 
+highlight LineNr term=bold ctermfg=DarkGrey
 
 " vimwiki
 let g:vimwiki_text_ignore_newline=0

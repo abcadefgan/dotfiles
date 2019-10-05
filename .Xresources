@@ -21,6 +21,7 @@ XTerm*selectToClipboard: true
 !#include ".xfiles/themes/monokai-light"
 #include ".xfiles/themes/eighties-dark"
 !#include ".xfiles/themes/codeschool-dark"
+!#include ".xfiles/themes/mostlylight"
 !#include ".xfiles/colors"
 
 !#include ".xfiles/themes/hotdog"

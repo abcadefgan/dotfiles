@@ -46,7 +46,10 @@ for_window [title="Left"] floating enable
 
 bindsym --release $mod+bar exec --no-startup-id $HOME/scripts/skrinsht
 bindsym $mod+Shift+m exec --no-startup-id pavucontrol-qt
-bindsym $mod+Shift+p exec --no-startup-id $HOME/scripts/skjermvalg.sh
+bindsym $mod+Shift+å exec --no-startup-id $HOME/scripts/skjermvalg.sh
+bindsym $mod+Shift+p exec --no-startup-id $HOME/scripts/clipmenu.sh show
+bindsym $mod+Shift+d exec --no-startup-id $HOME/scripts/clipmenu.sh clean
+bindsym $mod+Shift+c move position center
 bindsym $mod+Shift+Ctrl+s exec --no-startup-id $HOME/scripts/schism
 bindsym $mod+Shift+n exec --no-startup-id urxvt -name notatvindu -e vim ~/Documents/Notater/$(date +'%Y-%m-%d_%H.%M.%S')
 #
@@ -113,7 +116,7 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec $term -e 'cmus'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Ctrl+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
@@ -267,7 +270,7 @@ for_window [class="Xfburn"] floating enable
 for_window [urgent=latest] focus
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -304,7 +307,7 @@ mode "resize" {
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt
         bindsym semicolon resize grow width 5 px or 5 ppt
-	bindsym t resize set 600 752, move position 383 0, mode "default"
+	bindsym t resize set 600 752, move position center, mode "default"
 	
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

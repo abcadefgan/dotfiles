@@ -3,10 +3,12 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set relativenumber
-set numberwidth=1
 
+highlight clear CursorLineNr
+highlight CursorLineNr ctermfg=6
 highlight LineNr term=bold ctermfg=DarkGrey
 highlight Special ctermfg=DarkBlue
+set guicursor=n-i:hor1-Cursor
 
 " vimwiki
 let g:vimwiki_text_ignore_newline=0
@@ -33,5 +35,6 @@ nnoremap k gk
 
 
 map <leader>r :w <CR>:!processing-java --sketch="../$(basename % .pde)" --run<CR>
+map <leader>p :w <CR>:!python3 %<CR>
 map <leader>d :r !figlet -f 3d $(date +"%Y-%m-%d")<CR>7jo40i<C-v>u2587<ESC>
 " map <F8> :w <CR> :!gcc % -lncurses -o %< && ./%< <CR>

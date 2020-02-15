@@ -7,7 +7,7 @@
 ! "Number of columns" Set from: Default
 ! rofi.columns:                        1
 ! "Font to use" Set from: XResources
-rofi.font:                           Inconsolata 11
+rofi.font:                           Inconsolata 10 
 ! "Border width" Set from: Default
 ! rofi.bw:                             1
 ! "Location on screen" Set from: Default

@@ -1,5 +1,7 @@
-q
-add ~/Music/andre_cder/
+add ~/sid/
 clear
+add /home/anders/
 add ~/Music/mine cder/
+add ~/Music/andre_cder/
+q
 colorscheme andars

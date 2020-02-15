@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -30,54 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/anders/sketchbook/libraries/video/reference/processing
-	video
-1
-d/home/anders/sketchbook/libraries/video/reference/processing/video
-	..
-0
-d/home/anders/sketchbook/libraries/video/reference/processing
-	..
-0
-d/home/anders/sketchbook/libraries/video/reference
-	..
-0
-d/home/anders/sketchbook/libraries/video
-	..
-0
-d/home/anders/sketchbook/libraries
-	..
-0
-d/home/anders/sketchbook
-	libraries
-2
-d/home/anders/sketchbook/libraries
-	video
-1
-d/home/anders/sketchbook/libraries/video
-	..
-0
-d/home/anders/sketchbook/libraries
-	..
-0
-d/home/anders/sketchbook
-	..
-0
-d/home/anders
-	.local
-5
-d/home/anders/.local
-	share
-1
-d/home/anders/.local/share
-	fonts
-6
-d/home/anders/.local/share/fonts
-	..
-0
-d/home/anders/.local/share
-	mime
-15
 d/home/anders/.local
 	share
 1
@@ -330,39 +282,56 @@ d/home/anders/.config
 d/home/anders/.config/zathura
 	..
 0
-d
+d/run/media/anders/XTRN/mp3
+	andre cder
+2
+d/run/media/anders/XTRN/mp3/andre cder
+	Black Sabbath
+36
+d/run/media/anders/XTRN/mp3/andre cder/Black Sabbath
+	..
+0
+d/run/media/anders/XTRN/mp3/andre cder
+	Joy Division
+36
+d/run/media
+	..
+0
+d/home/anders/.themes
+	src
+14
+d/home/anders/Pictures
+	bryllupsfotos
+12
+d/home/anders/Pictures/bryllupsfotos
+	EA-42.jpg
+4
+d/home/anders
+	Pictures
+5
+d/home/anders/Pictures
+	bryllupsfotos
+12
+d/home/anders/Pictures/bryllupsfotos
+	EA-42.jpg
+4
+d/home/anders/Pictures
+	bryllupsfotos
+12
+d/home/anders/Pictures/bryllupsfotos
+	EA-72.jpg
+34
+d/home/anders
+	Pictures
+5
+d/home/anders/.config/vifm/colors
+	..
+0
+d/home/anders
+	Pictures
+5
 
 # Right window history (oldest to newest):
-D/home/anders/Downloads/processing-video-master/src/processing
-	video
-1
-D/home/anders/Downloads/processing-video-master/src/processing/video
-	..
-0
-D/home/anders/Downloads/processing-video-master/src/processing
-	..
-0
-D/home/anders/Downloads/processing-video-master/src
-	..
-0
-D/home/anders/Downloads/processing-video-master
-	examples
-2
-D/home/anders/Downloads/processing-video-master/examples
-	Capture
-1
-D/home/anders/Downloads/processing-video-master/examples/Capture
-	..
-0
-D/home/anders/Downloads/processing-video-master/examples
-	..
-0
-D/home/anders/Downloads/processing-video-master
-	.settings
-1
-D/home/anders/Downloads/processing-video-master/.settings
-	..
-0
 D/home/anders/Downloads/processing-video-master
 	library
 3
@@ -633,7 +602,36 @@ D/run/media/anders/corsair/2019
 D/run/media
 	..
 0
-D
+D/home/anders
+	Music
+4
+D/home/anders/Music
+	andre_cder
+1
+D/home/anders/Music/andre_cder
+	..
+0
+D/home/anders
+	Pictures
+5
+D/home/anders/Pictures
+	0001-0250.mkv
+13
+D/home/anders
+	..
+0
+D/home/anders/.config/vifm/colors
+	..
+0
+D/home/anders/.config/vifm
+	..
+0
+D/home/anders/.config
+	..
+0
+D/home/anders
+	..
+0
 
 # Command line history (oldest to newest):
 :config
@@ -672,7 +670,14 @@ D
 :empty
 :rename
 :cd ~
+:cd 
 :copy
+:rename!
+:filter {.jpg}
+:filter {*.jpg}
+:filter {.png}
+:filter {*.mkv}
+:filter
 :q
 
 # Search history (oldest to newest):

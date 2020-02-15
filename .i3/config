@@ -3,7 +3,9 @@
 
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id xiccd
 exec_always --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id mpd
 
 # MINE 
 set $term urxvt
@@ -40,18 +42,22 @@ for_window [title="^objtestVectorPoly"] floating enable
 for_window [class="feh"] fullscreen enable
 for_window [class="milkytracker"] fullscreen enable
 for_window [instance="notatvindu"] floating enable, resize set 700 700, move position center, mode "default"
+for_window [instance="gedit"] floating enable, resize set 700 700, move position center, mode "default"
 for_window [class="Godot"] floating enable
 for_window [title=".*Godot Engine*."] floating disable
 for_window [title="Left"] floating enable
 
 bindsym --release $mod+bar exec --no-startup-id $HOME/scripts/skrinsht
 bindsym $mod+Shift+m exec --no-startup-id pavucontrol-qt
-bindsym $mod+Shift+å exec --no-startup-id $HOME/scripts/skjermvalg.sh
+bindsym $mod+Shift+o exec --no-startup-id $HOME/scripts/skjermvalg.sh
 bindsym $mod+Shift+p exec --no-startup-id $HOME/scripts/clipmenu.sh show
 bindsym $mod+Shift+d exec --no-startup-id $HOME/scripts/clipmenu.sh clean
 bindsym $mod+Shift+c move position center
 bindsym $mod+Shift+Ctrl+s exec --no-startup-id $HOME/scripts/schism
 bindsym $mod+Shift+n exec --no-startup-id urxvt -name notatvindu -e vim ~/Documents/Notater/$(date +'%Y-%m-%d_%H.%M.%S')
+bindsym $mod+Shift+comma exec swind bottom-right
+
+
 #
 #
 
@@ -74,7 +80,7 @@ bindsym $mod+n border normal
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font xft:URWGothic-Book 11
-font pango: Noto Sans 6
+font pango: DejaVu Sans 6
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -308,6 +314,7 @@ mode "resize" {
         bindsym l resize shrink height 5 px or 5 ppt
         bindsym semicolon resize grow width 5 px or 5 ppt
 	bindsym t resize set 600 752, move position center, mode "default"
+	bindsym . exec swind bottom-right
 	
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

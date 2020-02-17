@@ -54,7 +54,7 @@ module-margin-right = 1
 font-0 = Inconsolata:style=Regular:fontformat=truetype:size=10:antialias=true;3
 
 modules-left = i3
-modules-center = spotify player-cmus 
+modules-center = spotify player-cmus playing-ncmpcpp
 modules-right =  eth battery date popupcal
 
 tray-position = right
@@ -71,6 +71,15 @@ tray-padding = 0
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+
+[module/playing-ncmpcpp]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/playing-ncmpcpp.sh
+click-left = mpc prev
+click-right = mpc next
+format = <label>
+format-foreground = ${xrdb:color9}
 
 [module/player-cmus]
 type = custom/script

@@ -22,7 +22,7 @@
     alternate-normal-foreground: @foreground;
     normal-background:           #2d2d2d;
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  #f2777a;
+    selected-normal-background:  #f19a9c;
     border-color:                @foreground;
     spacing:                     2;
     separatorcolor:              #ffcc66;
@@ -57,11 +57,11 @@
     border-color: @separatorcolor;
     spacing:      4px ;
     scrollbar:    false;
-    padding:      10 0 0 0;
+    padding:      8 0 0 0;
 }
 #element {
     border:  0;
-    padding: 1px ;
+    padding: 2px;
 }
 #element.normal.normal {
     background-color: @normal-background;

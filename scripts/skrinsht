@@ -1,2 +1,2 @@
 #!/bin/bash
-import $HOME/Pictures/$(date +%Y-%m-%d_%H%m%s).png
+import $HOME/Pictures/scrot/$(date +%Y-%m-%d_%H%m%s).png

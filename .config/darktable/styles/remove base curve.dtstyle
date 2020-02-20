@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<darktable_style version="1.0"><info><name>remove base curve</name><description></description></info><style><plugin><num>2</num><module>5</module><operation>basecurve</operation><op_params>gz09eJxjYIAAZiUW297akzZC+77b7svUsps1Jchuo8kKu93XpOyXeXjZMzA0QPEoGEqADYnNhCELiVMAqFcP9w==</op_params><enabled>0</enabled><blendop_params>gz11eJxjYGBgkGAAgRNODGiAEV0AJ2iwh+CRxQcA5qIZBA==</blendop_params><blendop_version>8</blendop_version><multi_priority>0</multi_priority><multi_name></multi_name></plugin></style></darktable_style>

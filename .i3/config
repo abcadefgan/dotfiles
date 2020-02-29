@@ -35,6 +35,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # MINE TING
 #
 #
+for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [title="Blender Render"] floating enable
 for_window [class="schismtracker"] fullscreen enable
 for_window [title="^polygontegning"] floating enable
@@ -93,7 +94,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec --no-startup-id rofi -show run -theme eighties-dark.rasi
+bindsym $mod+d exec --no-startup-id rofi -show run -theme eighties-dark.rasi 
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -309,6 +310,7 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
+        bindsym c move position center, mode "default"
         bindsym j resize shrink width 5 px or 5 ppt
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt

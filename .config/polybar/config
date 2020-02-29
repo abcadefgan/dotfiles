@@ -55,7 +55,7 @@ font-0 = Inconsolata:style=Regular:fontformat=truetype:size=10:antialias=true;3
 
 modules-left = i3
 modules-center = spotify player-cmus playing-ncmpcpp
-modules-right =  eth battery date popupcal
+modules-right =  eth battery date popup-calendar
 
 tray-position = right
 tray-padding = 0
@@ -71,6 +71,13 @@ tray-padding = 0
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/popup-calendar.sh --popup &
+format = <label>
 
 [module/playing-ncmpcpp]
 type = custom/script

@@ -1,0 +1,17 @@
+#!/bin/sh
+while read file
+do
+        case "$1" in
+        "C-g")
+                geeqie --list $file ;;
+		"C-d")
+                rm $file ;;
+
+		"C-f")
+                dirren=$(dirname $(readlink -f $file)) 
+				killall sxiv
+				sxiv -tbf $dirren
+		;;
+		esac
+
+done

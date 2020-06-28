@@ -1,2 +1,4 @@
 #!/bin/bash
-import $HOME/Pictures/scrot/$(date +%Y-%m-%d_%H%m%s).png
+bildet=$HOME/Pictures/scrot/$(date +%Y-%m-%d_%H%m%s).png
+import $bildet && xclip -selection clipboard -target image/png -i $bildet 
+

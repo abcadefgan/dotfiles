@@ -49,7 +49,7 @@ for_window [title=".*Godot Engine*."] floating disable
 for_window [title="Left"] floating enable
 
 bindsym --release $mod+bar exec --no-startup-id $HOME/scripts/skrinsht
-bindsym $mod+Shift+m exec --no-startup-id pavucontrol-qt
+#bindsym $mod+Shift+m exec --no-startup-id pavucontrol-qt
 bindsym $mod+Shift+o exec --no-startup-id $HOME/scripts/skjermvalg.sh
 bindsym $mod+Shift+p exec --no-startup-id $HOME/scripts/clipmenu.sh show
 bindsym $mod+Shift+d exec --no-startup-id $HOME/scripts/clipmenu.sh clean
@@ -57,18 +57,18 @@ bindsym $mod+Shift+c move position center
 bindsym $mod+Shift+Ctrl+s exec --no-startup-id $HOME/scripts/schism
 bindsym $mod+Shift+n exec --no-startup-id urxvt -name notatvindu -e vim ~/Documents/Notater/$(date +'%Y-%m-%d_%H.%M.%S')
 bindsym $mod+Shift+comma exec swind bottom-right
+bindsym $mod+Shift+m exec urxvt -e $HOME/scripts/sxivdagens
 
 
-#
-#
 
 # DROPDOWN
-exec --no-startup-id $term -name dropdown -e nvim ~/vimwiki/index.wiki
-for_window [class="URxvt" instance="dropdown"] floating enable
-for_window [class="URxvt" instance="dropdown"] resize set 683 370 
-for_window [class="URxvt" instance="dropdown"] move absolute position 683 379
-for_window [class="URxvt" instance="dropdown"] move scratchpad
-bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+# 
+#exec --no-startup-id $term -name dropdown -e nvim ~/vimwiki/index.wiki
+#for_window [class="URxvt" instance="dropdown"] floating enable
+#for_window [class="URxvt" instance="dropdown"] resize set 683 370 
+#for_window [class="URxvt" instance="dropdown"] move absolute position 683 379
+#for_window [class="URxvt" instance="dropdown"] move scratchpad
+#bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 # -- SLUTT MINE TING
 
@@ -87,14 +87,14 @@ font pango: DejaVu Sans 6
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec --no-startup-id rofi -show run -theme eighties-dark.rasi 
+bindsym $mod+d exec --no-startup-id rofi -show run -theme navy-and-ivory.rasi
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -410,7 +410,7 @@ set_from_resource $term_color15    color15
 #}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+#bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border

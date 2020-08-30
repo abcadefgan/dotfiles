@@ -103,7 +103,7 @@
   -GtkWindow-resize-grip-height: 0;
   -GtkWindow-resize-grip-width: 0;
   -WnckTasklist-fade-overlay-rect: 0;
-  -GtkWidget-cursor-aspect-ratio: 0;
+  -GtkWidget-cursor-aspect-ratio: 0.01;
   outline-color: rgba(241, 154, 156, 0.5);
   outline-style: dashed;
   outline-width: 1px;

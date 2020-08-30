@@ -4,5 +4,5 @@ do
 	convert -size 32x32 xc:$(xrdb -query | grep "color$i:" | cut -d ':' -f 2 | tr -d  '\t\n '
 ) color$(printf "%02d" $i).png
 done
-montage -tile 8x2 -geometry +0+0 -border 0 col*.png codeschool.png
+montage -tile 8x2 -geometry +0+0 -border 0 col*.png xcol.png
 rm color*.png

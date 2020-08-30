@@ -2,7 +2,7 @@
     frame_width = 0
     frame_color = "#747369"
     
-    font = Inconsolata 8
+    font = Inconsolata 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
